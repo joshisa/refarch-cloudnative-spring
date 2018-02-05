@@ -26,6 +26,9 @@ spec:
           requests:
             cpu: 100m
             memory: 256Mi
+        env:
+        - name: RABBITMQ_ERLANG_COOKIE
+          value: "mycookie"
         volumeMounts:
         - mountPath: /var/lib/rabbitmq
           name: rabbitmq-data
