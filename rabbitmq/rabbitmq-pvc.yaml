@@ -5,6 +5,7 @@ metadata:
     volume.beta.kubernetes.io/storage-class: default
   name: rabbitmq-data
 spec:
+  storageClassName: openebs-standard
   accessModes:
   - ReadWriteOnce
   resources:
